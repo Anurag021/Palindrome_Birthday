@@ -30,38 +30,12 @@ function clickHandler(){
             var[count, nextDate] = getNextPalindromeDate(date)
             var[countPrev, prevDate] = getPreviousPalindromeDate(date)
 
-            output.innerText = "The Next palindrome date is "+ nextDate.day+"-"+ nextDate.month+"-"+ nextDate.year+" you missed is it by "+count+" days "+
+            output.innerText = "Sorry your Birthday is not a palindrome The Next palindrome date is "+ nextDate.day+"-"+ nextDate.month+"-"+ nextDate.year+" you missed is it by "+count+" days "+
             "And The Previous palindrome date is "+ prevDate.day+"-"+ prevDate.month+"-"+ prevDate.year+" you missed is it by "+countPrev+" days"
 
         }
     }
 }
-
-
-
-
-// function checkPalindrome(){
-//     console.log("clicked")
-//     inputDate = dateOfBirth.value
-//     console.log(inputDate)
-//     var split = inputDate.split("-")
-//     date.day = split[2]
-//     date.month = split[1]
-//     date.year = split[0]
-//     console.log(date)
-//     var nextpalindromedate = getNextPalindromeDate(date)
-//     outputNextDate.innerText = "The Next Palindrome Date is "+nextpalindromedate[1].day+"-"+nextpalindromedate[1].month+"-"+nextpalindromedate[1].year+" and is " +nextpalindromedate[length] + " days away"
-
-//     inputDate = dateOfBirth.value
-//     console.log(inputDate)
-//     var split = inputDate.split("-")
-//     date.day = split[2]
-//     date.month = split[1]
-//     date.year = split[0]
-//     console.log(date)
-//     var prevpalindromedate = getPreviousPalindromeDate(date)
-//     outputPreviousDate.innerText = "And The Previous Palindrome Date is "+prevpalindromedate[1].day+"-"+prevpalindromedate[1].month+"-"+prevpalindromedate[1].year+" and is " +prevpalindromedate[length] + " days away"
-// }
 
 function reverseString(str){
     
